@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:columnCount="2"
+    android:padding="10dp"
+    android:useDefaultMargins="true"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_gravity="right|center_vertical"
+        android:text="@string/Boy_tv" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_column="1"
+        android:maxLength="3"
+        android:digits="0123456789"
+        android:inputType="number">
+
+        <requestFocus/>
+    </EditText>
+
+    <TextView
+        android:id="@+id/boy_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_column="1"
+        android:layout_gravity="fill_horizontal"
+        android:background="#BA69C8"
+        android:padding="@dimen/padding_tv" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:text="@string/kilo_tv" />
+
+    <TextView
+        android:id="@+id/kilo_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="2"
+        android:layout_column="1"
+        android:text="50kg" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="1"
+        android:layout_column="1"
+        android:progress="20"
+        android:layout_gravity="fill_horizontal"/>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="3"
+        android:layout_column="0"
+        android:layout_gravity="right|center_vertical"
+        android:text="@string/cinsiyet_tv"
+        />
+
+    <RadioGroup
+        android:id="@+id/radioGrup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="3"
+        android:layout_column="1"
+        android:orientation="horizontal"
+        android:layout_gravity="fill_horizontal">
+
+        <RadioButton
+            android:id="@+id/bay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_horizontal"
+            android:checked="true"
+            android:text="@string/bay" />
+
+        <RadioButton
+            android:id="@+id/bayan"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:text="@string/bayan"
+            tools:ignore="RtlHardcoded" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:layout_row="4"
+        android:layout_column="0"
+        android:text="@string/ıdeal_kilo_tv" />
+
+    <TextView
+        android:id="@+id/ideal_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="4"
+        android:layout_column="1"
+        android:layout_gravity="fill_horizontal"
+        android:background="#00EED2"
+        android:padding="@dimen/padding_tv" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:layout_row="5"
+        android:layout_column="0"
+        android:text="@string/durum_tv" />
+
+    <TextView
+        android:id="@+id/durum_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="5"
+        android:layout_column="1"
+        android:layout_gravity="fill_horizontal"
+        android:background="#037DDA"
+        android:padding="@dimen/padding_tv" />
+
+    <Space />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</GridLayout>
